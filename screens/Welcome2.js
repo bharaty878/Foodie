@@ -16,12 +16,12 @@ const Welcome2 = (Props) => {
     <View style={styles.view1}>
       <StatusBar translucent={true} backgroundColor={'transparent'}/>
       <View style={styles.view4}>
-        <Text style={styles.txt1}>We Serve</Text>
+        <Text style={styles.txt0}>We Serve</Text>
         <Text style={styles.txt1}>Incomparable</Text>
         <Text style={styles.txt1}>delicacies</Text>
         <Text style={styles.txt2}>All the best Restaurants with their top</Text>
-        <Text style={styles.txt2}>menu waiting for you,they can't wait</Text>
-        <Text style={styles.txt2}>for your order!!</Text>
+        <Text style={styles.txt22}>menu waiting for you,they can't wait</Text>
+        <Text style={styles.txt23}>for your order!!</Text>
         </View>
         <View style={styles.view3}>
               <Text style={styles.txtview}>  </Text>
@@ -46,22 +46,46 @@ const Welcome2 = (Props) => {
 export default Welcome2
 
 const styles = StyleSheet.create({
+
   view1:{
-    marginTop:300,
-    width:260,
-    height: 300,
+    marginTop:"95%",
+    width:"80%",
+    height: "43%",
     alignSelf:"center",
     backgroundColor:"darkorange",
-    borderRadius:20,  
+    borderRadius:60,  
   },
-  txt1:{
-     alignSelf:"center",
-     color:"white",
-     fontSize:30,
-     opacity:0.8
+  txt0:{
+    marginTop:"5%",
+    alignSelf:"center",
+    color:"white",
+    fontSize:35,
+    fontWeight:"600",
+    opacity:0.8
 
-  },
+ },
+ txt1:{
+  alignSelf:"center",
+  color:"white",
+  fontSize:35,
+  fontWeight:"600",
+  opacity:0.8
+
+},
+ 
   txt2:{
+    marginTop:"10%",
+     color:"white",
+     opacity:0.6,
+     alignSelf:"center",
+  },
+  txt22:{
+  
+     color:"white",
+     opacity:0.6,
+     alignSelf:"center",
+  }, txt23:{
+  
      color:"white",
      opacity:0.6,
      alignSelf:"center",

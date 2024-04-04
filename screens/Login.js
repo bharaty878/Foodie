@@ -103,9 +103,9 @@ const Goog=()=>{
       <TextInput value={email} onChangeText={(e)=>setEmail(e)}  placeholder='Enter E-mail' style={styles.input}/>
       <Text style={styles.txt24}>Password</Text>
 
-      <View style={{width: 350,}}>
+      <View >
       <TextInput value={password} onChangeText={(e)=>setPassword(e)}  placeholder=' Password' secureTextEntry={unset} style={styles.input} />
-        <TouchableOpacity style={{position:"relative",top:-45,left:300}} onPress={()=>Eye()}>
+        <TouchableOpacity style={{position:"relative",top:-50,left:329}} onPress={()=>Eye()}>
         <Icon name="eye-slash" size={15} color="black" />
         </TouchableOpacity>
       </View>
@@ -116,7 +116,7 @@ const Goog=()=>{
       <TouchableOpacity style={styles.Btn} onPress={()=>Logi()}>
                          <Text style={styles.txt1}>Sign in</Text>
       </TouchableOpacity>
-      <Text style={{alignSelf:"center"}}>-----------------------     Or sign in with    ---------------------</Text>
+      <Text style={{alignSelf:"center"}}>------------ Or sign in with   -----------</Text>
     
       <TouchableOpacity onPress={()=>signIn()} style={{alignSelf:"center",}}>
                        <View><Image source={require('../images/img6.webp')} style={{width:30,height: 30,margin:10}}/></View>
@@ -127,8 +127,9 @@ const Goog=()=>{
                         <Text style={styles.txt3}>Register</Text>
       </TouchableOpacity>
       <TouchableOpacity  onPress={()=>Goog()}>
-                         <Text style={{color:"green"}}>Dashboard calender click here if u do not want to login</Text>
+                         <Text style={{color:"green"}}>Dashboard calender</Text>
       </TouchableOpacity>
+      <Text >Login possible please set your own local server in express.js backend</Text>
       <Modal
         animationType="slide"
         transparent={true}
@@ -166,21 +167,21 @@ const styles = StyleSheet.create({
        
   },
   input:{
-          width: 330,
+          width: "90%",
           borderRadius:10,
-          margin:10,
+          margin:"5%",
           borderWidth:1,
           borderColor:"grey",
           backgroundColor:"white"
   },
   Btn:{
-        width:300,
-        height:40,
+        width:"80%",
+        height:"5%",
         alignSelf:"center",
        justifyContent:"center",
         backgroundColor:"darkorange",
         borderRadius:20,
-        margin:10
+        margin:"10%"
   },
   txt1:{
     textAlign:"center",
@@ -204,42 +205,37 @@ const styles = StyleSheet.create({
         fontWeight:"700"
   },
   view2:{
-       margin:10,
+       margin:20,
   },
   txt21:{
        color:"black",
-       fontSize:30,
-       fontWeight:"500",
-       marginTop:30
-  },
-   txt21:{
-       color:"black",
-       fontSize:30,
-       fontWeight:"500",
-       marginTop:30
+       fontSize:34,
+       fontWeight:"900",
+       marginTop:30,
   },
   txt22:{
     color:"black",
-    fontSize:30,
-    fontWeight:"500",
+    fontSize:34,
+    fontWeight:"900",
+  
     },
     txt23:{
       color:"black",
       fontSize:15,
-      fontWeight:"500",
-      marginLeft:10,
+      fontWeight:"800",
+      marginLeft:20,
       marginTop:20,
     },
     txt24:{
       color:"black",
       fontSize:15,
-      marginLeft:10,
+      marginLeft:20,
       marginTop:2,
-      fontWeight:"500",
+      fontWeight:"800",
     },
     txt25:{
         color:"gold",
-        fontWeight:"700",
+        fontWeight:"900",
         alignSelf:"flex-end",
         marginRight:20
     },

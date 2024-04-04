@@ -97,7 +97,7 @@ const OTP = (Props) => {
       </View>
       <View style={styles.view3}>
       <TouchableOpacity style={styles.btn} onPress={()=>Reset()}>
-                 <Text style={{color:"white"}}>Continue</Text>
+                 <Text style={{color:"white",marginTop:-9}}>Continue</Text>
       </TouchableOpacity>
       </View>
       
@@ -125,28 +125,29 @@ const styles = StyleSheet.create({
         textAlign:"center"
     },
     txt1:{
-        color:"black",
-        fontSize:30,
-        margin:10,
-        fontWeight:"500"
+      color:"black",
+      fontSize:34,
+      fontWeight:"900",
+      marginTop:"20%",
+      margin:"4%"
     },
     txt2:{
-        marginLeft:10
+        marginLeft:"5%"
     },
     txt3:{
         alignSelf:"center"
     },
     btn:{
         alignSelf:"center",
-        marginTop:10
+        marginTop:"6%"
     },
     view3:{
-        margin:20,
-        width: 200,
-        height: 50,
+        margin:"5%",
+        width: "80%",
+        height: "10%",
         backgroundColor:"darkorange",
         borderRadius:20,
-        alignSelf:"center"
+        alignSelf:"center",
     }
 })
 

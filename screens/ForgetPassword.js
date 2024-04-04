@@ -37,7 +37,7 @@ const ForgetPassword = (Props) => {
       <Text style={styles.txt4}>Enter your email address and we'll send you </Text>
       <Text style={styles.txt5}>confirmation code to reset your password </Text>
 
-      <Text style={styles.txt3}>Email Address</Text>
+      <Text style={styles.txt23}>Email Address</Text>
 
       <View style={{width: 350,}}>
       <TextInput value={email} onChangeText={(e)=>setEmail(e)}  placeholder='Write email'  style={styles.input} />
@@ -61,22 +61,21 @@ const styles = StyleSheet.create({
          backgroundColor:"white"
   },
   input:{
+    width: "90%",
     borderRadius:10,
-    marginLeft:10,
-    marginTop:-5,
+    margin:"5%",
     borderWidth:1,
     borderColor:"grey",
     backgroundColor:"white"
 },
   Btn:{
-    width:300,
-    height:40,
+    width:"90%",
+    height:"20%",
     alignSelf:"center",
    justifyContent:"center",
     backgroundColor:"darkorange",
     borderRadius:20,
-    margin:10,
-    marginTop:180
+    marginTop:"10%"
 },
 txt1:{
 textAlign:"center",
@@ -85,23 +84,25 @@ fontWeight:"300",
   color:"white"
 },
 txt2:{
-  fontWeight:"500",
-    fontSize:25,
-    margin:10,
-    color:"black"
+  color:"black",
+  fontSize:34,
+  fontWeight:"900",
+  marginTop:"20%",
+  margin:"4%"
+},
+  txt23:{
+    color:"black",
+    fontSize:15,
+    fontWeight:"800",
+    marginLeft:20,
+    marginTop:"20%",
   },
-  txt3:{
-    fontWeight:"500",
-      fontSize:20,
-      margin:10,
-      color:"black"
-    },
     txt4:{
-        marginLeft:10,
-        marginTop:-8
+        marginLeft:"5%",
+        marginTop:"-1%"
       },
       txt5:{
-        marginLeft:10,
+        marginLeft:"5%",
         
       },
 })
